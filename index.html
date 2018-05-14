@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="screen">
+    <div id="topUI">
+        <div id="shapesCount" class="statistic">
+            <span class="header">COUNT: </span>
+            <span id="shapesCountValue" class="value">0</span>
+        </div>
+
+        <div id="totalSquare" class="statistic">
+            <span class="header">TOTAL SQUARE:</span>
+            <span id="totalSquareValue" class="value">0</span>
+        </div>
+    </div>
+    <div id="canvas"></div>
+    <div id="bottomUI">
+        <div id="gravityCtrl" class="controller">
+            <span class="header">Gravity</span>
+            <a id="decGravityBtn" class="ctrlBtn" href="javascript:">-</a>
+            <a id="incGravityBtn" class="ctrlBtn" href="javascript:">+</a>
+            <span id="gravityValue" class="value">0</span>
+        </div>
+        <div id="generatorCtrl" class="controller">
+            <span class="header">Generate</span>
+            <a id="decGeneratorBtn" class="ctrlBtn" href="javascript:">-</a>
+            <a id="incGeneratorBtn" class="ctrlBtn" href="javascript:">+</a>
+            <span id="generatorValue" class="value">0</span>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/lib/pixi.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- CONFIG -->
+<script src="js/config/config.js"></script>
+<script src="js/config/eventList.js"></script>
+
+<!-- CORE -->
+<script src="js/core/Batman.js"></script>
+<script src="js/core/EventManager.js"></script>
+
+<!-- BASE -->
+<script src="js/components/base/BaseController.js"></script>
+<script src="js/components/base/BaseView.js"></script>
+
+<!-- STAGE -->
+<script src="js/components/stage/StageController.js"></script>
+<script src="js/components/stage/StageView.js"></script>
+<script src="js/components/stage/shapes/BaseShape.js"></script>
+<script src="js/components/stage/shapes/Polygon.js"></script>
+<script src="js/components/stage/shapes/Ellipse.js"></script>
+<script src="js/components/stage/shapes/Random.js"></script>
+
+<!-- UI -->
+<script src="js/components/ui/UIController.js"></script>
+<script src="js/components/ui/UIView.js"></script>
+
+<script>
+    app.run();
+</script>
+</body>
+</html>

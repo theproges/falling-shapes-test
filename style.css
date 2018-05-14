@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1c1c1c;
+    font-family: Arial;
+}
+
+#screen {
+    width: 600px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+#canvas canvas{
+    border: 1px solid #808080;
+    box-sizing: border-box;
+}
+
+.statistic, .controller {
+    float: left;
+}
+
+.statistic {
+    color: white;
+    width: 300px;
+    padding: 5px 0px 0px 0px;
+}
+
+#shapesCount {
+    width: 200px;
+}
+
+.statistic .header {
+
+}
+
+.statistic .value {
+
+}
+
+.controller {
+    width: 200px;
+    height: 26px;
+    color: #04c100;
+    background: #0b0b0b;
+    border: 1px solid #037300;
+}
+
+.controller .header {
+    position: relative;
+    top: 4px;
+    left: 6px;
+}
+
+.controller .value {
+    float: right;
+    margin-top: 5px;
+    margin-right: 2px;
+}
+
+.controller .ctrlBtn {
+    display: inline-block;
+    text-align: center;
+    float: right;
+    text-decoration: none;
+    color: #037300;
+    border: 1px solid #037300;
+    font-size: 14px;
+    padding: 2px 0;
+    width: 21px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+
+.controller .ctrlBtn:hover {
+    color: #04c100;
+    border: 1px solid #04c100;
+}
+
+.controller .ctrlBtn:active {
+    color: #037300;
+    border: 1px solid #037300;
+}
+
+
+#generatorCtrl {
+    margin-left: 30px;
+}
